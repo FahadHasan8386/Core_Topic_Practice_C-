@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="ADO.NET/ADO.NET.csproj" />
+  <Project Path="FileAndStream/FileAndStream.csproj" Id="d5064fe7-890d-4d78-ad78-70366fbe0ef9" />
 </Solution>
