@@ -7,7 +7,7 @@ class Program
 
     static void Main(string[] args)
     {
-        ///total byte 
+        ///total byte for 5Gb Data calculation on byte
         var totalBytes = 5L * 1024 * 1024 * 1024;
 
       

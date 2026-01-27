@@ -8,7 +8,7 @@ class Program
         var splitFileSize = 100L * 1024 * 1024;
         var buffer = new byte[8192];
 
-        // Project folder (where split files will go)
+        // Project folder where is split folder are
         var projectDirectory = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, @"..\..\.."));
 
         // Large file beside .sln
@@ -16,11 +16,11 @@ class Program
 
         if (!File.Exists(largeFilePath))
         {
-            Console.WriteLine("❌ Large file not found: " + largeFilePath);
+            Console.WriteLine("Large file not found: " + largeFilePath);
             return;
         }
 
-        Console.WriteLine("🚀 File splitting started...");
+        Console.WriteLine("File splitting started...");
 
         using (var largeFileStream = new FileStream(largeFilePath, FileMode.Open, FileAccess.Read))
         {
@@ -56,6 +56,6 @@ class Program
             }
         }
 
-        Console.WriteLine("🎉 File splitting completed successfully.");
+        Console.WriteLine("File splitting completed successfully.");
     }
 }
