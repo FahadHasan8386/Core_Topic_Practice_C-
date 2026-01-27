@@ -8,14 +8,14 @@ class Program
     static void Main(string[] args)
     {
         ///total byte 
-        long totalBytes = 5L * 1024 * 1024 * 1024;
+        var totalBytes = 5L * 1024 * 1024 * 1024;
 
       
-        string current_Directory = Directory.GetCurrentDirectory();
+        var current_Directory = Directory.GetCurrentDirectory();
 
-        string solution_Directory = Directory.GetParent(current_Directory).Parent.Parent.Parent.FullName;
+        var solution_Directory = Directory.GetParent(current_Directory).Parent.Parent.Parent.FullName;
 
-        string filePath = Path.Combine(solution_Directory, "LargeRandomFile.txt");
+        var filePath = Path.Combine(solution_Directory, "LargeRandomFile.txt");
 
      
         Console.WriteLine("Generating file...");
