@@ -1,0 +1,14 @@
+﻿@using WebApplication1.Controllers
+<h1>This te test page </h1>
+@model TestModel
+@if (!string.IsNullOrEmpty(Model.Name))
+{
+	<p>My name is @(Model.Name).</p>
+}
+
+@section Scripts{
+	<script src=""></script>
+	<script>
+		console.log("ok");
+	</script>
+}
